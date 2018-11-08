@@ -3,29 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <title>Сайтик</title>
+    <style>
+        #main {
+            width: 75%;
+        }
+
+        div {
+            margin-outside: 10px
+        }
+div.footer-element{
+    display: flex;
+    flex-direction: column;
+    margin-right:20px
+}
+        #sidebar {
+            float: left;
+            width: 10%;
+        }
+
+        img.sidebar_img {
+            width: 100%
+        }
+
+        #footer {
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
 </head>
 <body>
 <div>
-    <h1>Контактная информация</h1>
-    <br>
-    <h2>
-        <img src="../img/cellphone-basic.png">
-        Телефон
-    </h2>
-    <p>+380933333333</p>
-    <br>
-    <h2>
-        <img src="../img/email.png">
-        Эл. Почта
-    </h2>
-    <p>supercompany@gmail.com</p>
-    <br>
-    <a href="../pages/settings.html">
-        <img src="../img/settings.png">
-    </a>
-    <a href="../index.html">
-        <img src="../img/home.png">
-    </a>
+    <div id="header">
+        <h1>Контактная информация</h1>
+    </div>
+    <div id="sidebar">
+        <a href="../pages/settings.html">
+            <img class="sidebar_img" src="../img/settings.png">
+        </a>
+        <a href="../index.html">
+            <img class="sidebar_img" src="../img/home.png">
+        </a>
+    </div>
+    <div id="main">
+        <p>Задача организации, в особенности же дальнейшее развитие различных
+            форм деятельности влечет за собой процесс внедрения и модернизации
+            системы обучения кадров, соответствующей насущным потребностям! Таким
+            образом, дальнейшее развитие различных форм деятельности способствует
+            повышению актуальности ключевых компонентов планируемого обновления.
+            С другой стороны сложившаяся структура организации создаёт предпосылки
+            качественно новых шагов для дальнейших направлений развитая системы
+            массового участия. Значимость этих проблем настолько очевидна, что рамки
+            и место обучения кадров обеспечивает широкому кругу специалистов участие
+            в формировании соответствующих условий активизации.</p>
+    </div>
+    <div id="footer">
+        <div class="footer-element">
+            <h2>
+                <img src="../img/cellphone-basic.png">
+                Телефон
+            </h2>
+            <p>+380933333333</p>
+        </div>
+        <div class="footer-element">
+            <h2>
+                <img src="../img/email.png">
+                Эл. Почта
+            </h2>
+            <p>supercompany@gmail.com</p>
+        </div>
+    </div>
 </div>
 </body>
 </html>
