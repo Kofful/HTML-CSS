@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Сайтик</title>
+    <link href="https://fonts.googleapis.com/css?family=Russo+One|Yanone+Kaffeesatz&amp;subset=cyrillic"
+          rel="stylesheet">
     <style>
         #main {
-            width: 75%;
         }
 
         div {
@@ -14,16 +15,35 @@
 
         #sidebar {
             float: left;
-            margin-right: 15px;
+            max-width: 67px;
+            min-width: 67px;
         }
 
-        img {
-            height: 100%
+        img.sidebar_img {
+            width: 100%
+        }
+
+        h1 {
+            font-family: 'Russo One', sans-serif;
+        }
+
+        p {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 25px;
         }
 
         #footer {
             height: 50px;
         }
+
+        #center {
+            display: flex;
+            flex-direction: row;
+        }
+        img.footer_img{
+            height:100%;
+        }
+
     </style>
 </head>
 <body>
@@ -31,23 +51,25 @@
     <div id="header">
         <h1>Главная</h1>
     </div>
-    <div id="sidebar">
-        <a href="./pages/settings.html">
-            <img src="./assets/img/settings.png">
-        </a>
-    </div>
-    <div id="main">
-        <p>С другой стороны повышение уровня гражданского сознания требует от
-            нас анализа системы обучения кадров, соответствующей насущным потребностям.
-            Разнообразный и богатый опыт постоянный количественный рост и сфера нашей
-            активности обеспечивает широкому кругу специалистов участие в формировании
-            соответствующих условий активизации? Таким образом, дальнейшее развитие различных
-            форм деятельности требует от нас системного анализа экономической целесообразности
-            принимаемых решений!</p>
+    <div id="center">
+        <div id="sidebar">
+            <a href="./pages/settings.html">
+                <img class="sidebar_img" src="./assets/img/settings.png">
+            </a>
+        </div>
+        <div id="main">
+            <p>С другой стороны повышение уровня гражданского сознания требует от
+                нас анализа системы обучения кадров, соответствующей насущным потребностям.
+                Разнообразный и богатый опыт постоянный количественный рост и сфера нашей
+                активности обеспечивает широкому кругу специалистов участие в формировании
+                соответствующих условий активизации? Таким образом, дальнейшее развитие различных
+                форм деятельности требует от нас системного анализа экономической целесообразности
+                принимаемых решений!</p>
+        </div>
     </div>
     <div id="footer">
         <a href="./pages/contact.html">
-            <img src="./assets/img/contact-us.png">
+            <img class="footer_img" src="./assets/img/contact-us.png">
         </a>
     </div>
 </div>

@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Сайтик</title>
+    <link href="https://fonts.googleapis.com/css?family=Russo+One|Yanone+Kaffeesatz&amp;subset=cyrillic"
+          rel="stylesheet">
     <style>
         #main {
-            width: 75%;
+            height: 100%;
         }
 
         div {
@@ -14,15 +16,34 @@
 
         #sidebar {
             float: left;
-            margin-right:15px;
+            margin-right: 15px;
+            max-width: 67px;
+            min-width: 67px;
         }
 
-        img {
-            height: 100%
+        h1 {
+            font-family: 'Russo One', sans-serif;
+        }
+
+        p {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 25px;
         }
 
         #footer {
             height: 50px;
+        }
+
+        #center {
+            display: flex;
+            flex-direction: row;
+        }
+
+        img.sidebar_img {
+            width: 100%;
+        }
+        img.footer_img{
+            height:100%;
         }
     </style>
 </head>
@@ -32,22 +53,24 @@
     <div id="header">
         <h1>Настройки(Хотя их тут и нет)</h1>
     </div>
-    <div id="sidebar">
-        <a href="../index.html">
-            <img src="../assets/img/home.png">
-        </a>
-    </div>
-    <div id="main">
-        <p>Практический опыт показывает, что реализация намеченного плана развития играет
-            важную роль в формировании направлений прогрессивного развития. Дорогие друзья,
-            постоянный количественный рост и сфера нашей активности обеспечивает актуальность
-            экономической целесообразности принимаемых решений!
-            Задача организации, в особенности же постоянный количественный рост и сфера нашей
-            активности позволяет выполнить важнейшие задания по разработке форм воздействия.</p>
+    <div id="center">
+        <div id="sidebar">
+            <a href="../index.html">
+                <img class="sidebar_img" src="../assets/img/home.png">
+            </a>
+        </div>
+        <div id="main">
+            <p>Практический опыт показывает, что реализация намеченного плана развития играет
+                важную роль в формировании направлений прогрессивного развития. Дорогие друзья,
+                постоянный количественный рост и сфера нашей активности обеспечивает актуальность
+                экономической целесообразности принимаемых решений!
+                Задача организации, в особенности же постоянный количественный рост и сфера нашей
+                активности позволяет выполнить важнейшие задания по разработке форм воздействия.</p>
+        </div>
     </div>
     <div id="footer">
         <a href="../pages/contact.html">
-            <img src="../assets/img/contact-us.png">
+            <img class="footer_img" src="../assets/img/contact-us.png">
         </a>
     </div>
 </div>
