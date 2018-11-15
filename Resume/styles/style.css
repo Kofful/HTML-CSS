@@ -45,7 +45,6 @@ body, html, .mainContainer {
     width: 100%;
     background-color: gray;
     min-height: 100%;
-    height: 100%;
 }
 
 .profileContainer {;
@@ -58,12 +57,23 @@ body, html, .mainContainer {
 }
 
 .profilePicture {
-    border-radius:150px;
+    border-radius: 150px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     width: 100%;
     height: 300px;
     background-image: url("../assets/img/harold.png");
     background-size: cover;
-    box-shadow: 4px 4px 20px rgba(0,0,0,0.5);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.profile-name {
+    color: white;
+    font-family: 'Meriweather', sans-serif;
+    margin-bottom: 40px;
+    font-size: 25px;
 }
 
 .shortDescription {
@@ -72,34 +82,55 @@ body, html, .mainContainer {
     width: 100%;
     background-color: white;
     margin-right: 50px;
-    margin-top:10px;
-    display:flex;
+    margin-top: 10px;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 4px 4px 20px rgba(0,0,0,0.5);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
 }
-
+.description-container{
+    width: 100%;
+}
+.references{
+    display: flex;
+    align-self: flex-end;
+    height: 40px;
+    width:100%;
+    margin-top: 60px;
+    justify-content: space-around;
+}
+.reference{
+    height: 100%;
+}
+.reference-img{
+    height: 100%;
+}
 @media (max-width: 1024px) {
 
     .skillsContainer {
         display: none;
     }
 }
+
 @media (max-width: 750px) {
 
     .profileContainer {
         display: none;
     }
 }
+
 .description-element {
     display: flex;
+    margin-left:70px;
     flex-direction: column;
-    margin-top:40px;
+    margin-top: 40px;
 }
+
 .el-name {
     margin-bottom: 1px;
     font-family: 'Comfortaa', cursive;
 }
+
 .text-info {
     margin-top: 10px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -116,22 +147,52 @@ body, html, .mainContainer {
 }
 
 .skillsContainer {
-    margin-top:10px;
-    display: flex;
     max-width: 400px;
     width: 100%;
-    height: 400px;
+}
+
+.skill-container {
     background-color: white;
     margin-right: 50px;
-    flex-wrap:wrap;
+    border-radius: 10px;
+    margin-top: 10px;
+    max-height: 100%;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.skill_header {
+    width: 100%;
+    height: 50px;
+    border-bottom: 3px solid gray;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
-.technology-image{
-    margin:5px;
-    width:100px;
-    height:100px;
-    opacity:.2;
+
+.skill-header_text {
+    font-size: 30px;
+    font-family: 'Impact', sans-serif;
 }
+
+#programming_db {
+    font-size: 20px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.technology-image {
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    opacity: .2;
+}
+
 .technology-image:hover {
     opacity: 1;
 }
