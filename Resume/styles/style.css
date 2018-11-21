@@ -207,18 +207,17 @@ body, html, .mainContainer {
         box-shadow: none;
         transition: all 1s ease;
     }
+    .technology-image{
+         opacity: 1;
+     }
     .skillsContainer:hover .profileContainer{
-        display:none
+        display:none;
     }
     .skill-container:hover{
         margin-left: -340px;
         box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
     }
-    .skillsContainer:hover .technology-image{
-        opacity: 1;
-    }
     .skillsContainer:hover{
-        transition-delay:1s;
         overflow: visible;
     }
 }
