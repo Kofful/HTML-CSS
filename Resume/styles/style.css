@@ -134,7 +134,7 @@ body, html, .mainContainer {
     width: 100%;
     margin-left: 50px;
     margin-right: 50px;
-    height: 100px;
+    height: 400px;
     background-color: aquamarine;
 }
 
@@ -193,9 +193,12 @@ body, html, .mainContainer {
 }
 
 @media (max-width: 1024px) {
-
+.skills-container{
+    width:405px;
+    margin-left:-350px;
+    overflow: hidden;
+}
     .skillsContainer{
-        overflow: hidden;
         width:100px;
     }
     .descriptionContainer {
@@ -203,7 +206,7 @@ body, html, .mainContainer {
     }
     .skill-container{
         width:400px;
-        margin-right: -350px;
+        margin-left: 350px;
         box-shadow: none;
         transition: all 1s ease;
     }
@@ -214,7 +217,7 @@ body, html, .mainContainer {
         display:none;
     }
     .skill-container:hover{
-        margin-left: -340px;
+        margin-left:5px;
         box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
     }
     .skillsContainer:hover{
