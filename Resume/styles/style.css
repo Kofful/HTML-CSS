@@ -131,19 +131,6 @@ body, html, .mainContainer {
 .reference-img{
     height: 100%;
 }
-@media (max-width: 1024px) {
-
-    .skillsContainer {
-        display: none;
-    }
-}
-
-@media (max-width: 750px) {
-
-    .profileContainer {
-        display: none;
-    }
-}
 
 .description-element {
     display: flex;
@@ -225,6 +212,7 @@ body, html, .mainContainer {
 .technology-image:hover {
     opacity: 1;
 }
+<<<<<<< HEAD
 © 2018 GitHub, Inc.
 Terms
 Privacy
@@ -238,3 +226,42 @@ Training
 Blog
 About
 Press h to open a hovercard with more details.
+=======
+
+@media (max-width: 1024px) {
+
+    .skillsContainer{
+        overflow: hidden;
+        width:100px;
+    }
+    .descriptionContainer {
+        margin-right: 50px;
+    }
+    .skill-container{
+        width:400px;
+        margin-right: -350px;
+        box-shadow: none;
+        transition: all 1s ease;
+    }
+    .technology-image{
+         opacity: 1;
+     }
+    .skillsContainer:hover .profileContainer{
+        display:none;
+    }
+    .skill-container:hover{
+        margin-left: -340px;
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
+    }
+    .skillsContainer:hover{
+        overflow: visible;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .profileContainer {
+        display: none;
+    }
+}
+>>>>>>> 046bc0e8e9646be8592f6f703ae7062161e2bbff
