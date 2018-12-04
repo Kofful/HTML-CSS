@@ -1,63 +1,49 @@
 const works = [
     {
         name: "first",
-        source: "./assets/img/file.png"
+        source: "./assets/img/p1.jpg"
     },
     {
         name: "second",
-        source: "./assets/img/file.png"
+        source: "./assets/img/p2.jpg"
     },
     {
         name: "third",
-        source: "./assets/img/file.png"
+        source: "./assets/img/p3.jpg"
     },
     {
         name: "fourth",
-        source: "./assets/img/file.png"
+        source: "./assets/img/p4.jpg"
     },
     {
         name: "fifth",
-        source: "./assets/img/file.png"
+        source: "./assets/img/p5.jpg"
     },
     {
         name: "sixth",
         source: "./assets/img/file.png"
-    },
-    {
-        name: "seventh",
-        source: "./assets/img/file.png"
-    },
-    {
-        name: "eighth",
-        source: "./assets/img/file.png"
-    },
-    {
-        name: "ninth",
-        source: "./assets/img/file.png"
-    },
-    {
-        name: "tenth",
-        source: "./assets/img/file.png"
-    },
-    {
-        name: "eleventh",
-        source: "./assets/img/file.png"
-    },
-    {
-        name: "twelfth",
-        source: "./assets/img/file.png"
-    },
-    {
-        name: "thirteenth",
-        source: "./assets/img/file.png"
-    },
+    }
 ];
-let mainDiv = document.getElementsByClassName("descriptionContainer")[0];
-for (let i = 0; i < works.length; i++) {
-    const newImg= document.createElement("img");
-    newImg.src = works[i].source;
-    newImg.style.minWidth = "200px";
-    newImg.style.height = "200px";
-    newImg.style.margin = "10px";
-    mainDiv.appendChild(newImg);
+let currentPhoto = 0;
+const positionParagraph = document.getElementsByClassName("img-position")[0];
+positionParagraph.innerText = `1 of ${works.length}`;
+const img = document.getElementsByClassName("img-container")[0];
+
+function keyPressed(event) {
+    switch (event.keyCode) {
+        case 37:
+            currentPhoto--;
+            if (currentPhoto < 0)
+                currentPhoto = works.length - 1;
+            break;
+        case 39:
+            currentPhoto++;
+            if (currentPhoto === works.length)
+                currentPhoto = 0;
+            break;
+    }
+    img.style.backgroundImage = `url(${works[currentPhoto].source})`;
+    positionParagraph.innerText = `${currentPhoto + 1} of ${works.length}`;
 }
+
+
