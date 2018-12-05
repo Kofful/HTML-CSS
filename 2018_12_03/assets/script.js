@@ -25,25 +25,47 @@ const works = [
     }
 ];
 let currentPhoto = 0;
-const positionParagraph = document.getElementsByClassName("img-position")[0];
-positionParagraph.innerText = `1 of ${works.length}`;
-const img = document.getElementsByClassName("img-container")[0];
+const containers = document.getElementsByClassName("img-container");
+containers[0].style.backgroundImage = `url(${works[works.length - 1].source})`;
+containers[0].style.marginLeft = "-300px";
+containers[1].style.backgroundImage = `url(${works[0].source})`;
+containers[2].style.backgroundImage = `url(${works[1].source})`;
+containers[2].style.marginLeft = "300px";
+let img;
 
 function keyPressed(event) {
-    switch (event.keyCode) {
+    img = document.createElement("div");
+    img.className = "img-container";
+    switch (event) {
         case 37:
             currentPhoto--;
             if (currentPhoto < 0)
                 currentPhoto = works.length - 1;
+            containers[0].style.marginLeft = "0px";
+            containers[1].style.marginLeft = "300px";
+            document.getElementsByClassName("img-containers")[0].removeChild(containers[2]);
+            if (currentPhoto === 0)
+                img.style.backgroundImage = `url(${works[works.length - 1].source})`;
+            else
+                img.style.backgroundImage = `url(${works[currentPhoto - 1].source})`;
+            img.style.marginLeft = "-300px";
+            document.getElementsByClassName("img-containers")[0].insertAdjacentElement("afterbegin", img);
             break;
         case 39:
             currentPhoto++;
             if (currentPhoto === works.length)
                 currentPhoto = 0;
+            containers[1].style.marginLeft = "-300px";
+            containers[2].style.marginLeft = "0px";
+            document.getElementsByClassName("img-containers")[0].removeChild(containers[0]);
+            if (currentPhoto === works.length - 1)
+                img.style.backgroundImage = `url(${works[0].source})`;
+            else
+                img.style.backgroundImage = `url(${works[currentPhoto + 1].source})`;
+            img.style.marginLeft = "300px";
+            document.getElementsByClassName("img-containers")[0].appendChild(img);
             break;
     }
-    img.style.backgroundImage = `url(${works[currentPhoto].source})`;
-    positionParagraph.innerText = `${currentPhoto + 1} of ${works.length}`;
 }
 
 

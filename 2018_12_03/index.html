@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en" onkeydown="keyPressed(event)">
+<html lang="en" onkeydown="keyPressed(event.keyCode)">
 <head>
     <meta charset="UTF-8">
     <title>Владислав Чернюк</title>
@@ -53,8 +53,16 @@
                 <p id="developer">Java Junior Developer</p>
             </div>
             <div class="projects">
-                <div class="img-container">
-                    <p class="img-position"></p>
+                <div id="left-arrow" class="arrow" onclick="keyPressed(37)">
+                    <img class="left-arrow-img" src="./assets/img/chevron.png" alt="left">
+                </div>
+                <div class="img-containers">
+                    <div class="img-container"></div>
+                    <div class="img-container"></div>
+                    <div class="img-container"></div>
+                </div>
+                <div id="right-arrow" class="arrow" onclick="keyPressed(39)">
+                    <img class="right-arrow-img" src="./assets/img/chevron.png" alt="left">
                 </div>
             </div>
         </div>
