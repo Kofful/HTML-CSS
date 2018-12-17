@@ -17,13 +17,19 @@ module.exports = {
             userName,
             userLastName,
         } = req.body;
-        if(!userName || !userNickname || !userLastName || !password || password.length < 8 || password.length > 32)
+        const re = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+        if (!userName || !userNickname || !userLastName || !password ||
+            password.length < 8 || password.length > 32 ||
+            !re.test(userNickname) || !re.test(password)) {
             next(INVALID_PARAMS);
-        else next();
+        }
+        else {
+            next();
+        }
     },
     validateFileName(req, res, next) {
         const fileName = req.params.fileName;
-        if(!fileName || fileName.type.split("/")[0] !== "image")
+        if (!fileName || fileName.type.split("/")[0] !== "image")
             next(INVALID_PARAMS);
         else next();
     }

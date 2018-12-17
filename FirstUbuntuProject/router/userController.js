@@ -111,20 +111,28 @@ module.exports.downloadFile = function (req, res) {
     res.sendFile(publicPath);
 };
 
-module.exports.deleteFile = (req, res) => {
-    const id = parseInt(req.body.id);
-    const userId = parseInt(req.body.userId);
-    for (let i = 0; i < users.length; i++) {
-        if (users[i].id === userId) {
-            for (let j = 0; j < users[i].album; j++) {
-                if (users[i].album[i].id === id) {
-                    users[i].album.removeChild(users[i].album[i]);
-                    res.send("Success");
-                }
-            }
-            break;
+function findPhoto(imageId, userId)
+{
+    let user;
+    users.forEach(el => {
+        if (el.id === userId) {
+            user = el;
         }
+    });
+    user.album.forEach(el => {
+        if (el.id === imageId) {
+            return el;
+        }
+    });
+}
+
+module.exports.deleteFile = (req, res) => {
+    const photo = findPhoto(parseInt(req.body.imageId), parseInt(req.body.userId));
+    if(photo) {
+        photo.parent.removeChild();
+        res.send("Success");
     }
+    else
     res.send("File not found");
 };
 
@@ -134,21 +142,26 @@ module.exports.addComment = (req, res) => {
         text: req.body.comment,
         commentatorId: req.body.commentatorId
     };
-    const imageId = parseInt(req.body.id);
-    const userId = parseInt(req.body.userId);
-    for (let i = 0; i < users.length; i++) {
-        if (users[i].id === userId) {
-            for (let j = 0; j < users[i].album; j++) {
-                if (users[i].album[i].id === imageId) {
-                    users[i].album[i].comments.push(comment);
-                    res.send("Success");
-                }
-            }
-            break;
-        }
+    const photo = findPhoto(parseInt(req.body.imageId), parseInt(req.body.userId));
+    if(photo) {
+        photo.parent.removeChild();
+        res.send("Success");
     }
+    if(photo) {
+        photo.comments.push(comment);
+    }
+    else
     res.send("File not found");
 };
+
+function findComment(id, imageId, userId) {
+    const photo = findPhoto(imageId, userId);
+    photo.comments.forEach(el => {
+        if (el.id === id) {
+            return el;
+        }
+    });
+}
 
 module.exports.updateComment = (req, res) => {
     const newComment = {
@@ -156,56 +169,26 @@ module.exports.updateComment = (req, res) => {
         text: req.body.comment,
         commentatorId: req.body.commentatorId
     };
-    const imageId = parseInt(req.body.id);
-    const userId = parseInt(req.body.userId);
-
-    let user;
-    let album;
-    for (let i = 0; i < users.length; i++) {
-        if (users[i].id === userId) {
-            user = users[i];
-        }
+    let el = findComment(newComment.id, parseInt(req.body.imageId), parseInt(req.body.userId));
+    if (el) {
+        el = newComment;
+        res.send("Success");
     }
-
-    for (let i = 0; i < users[i].album.length; i++) {
-        if (user.album[i].id === imageId) {
-            album = user.album[i];
-        }
-    }
-
-    for (let i = 0; i < album.length; i++) {
-        if(album[i].id === newComment.id) {
-            album[i] = newComment;
-            res.send("Success");
-        }
-    }
-    res.send("File not found");
+    else
+        res.send("Data not found");
 };
 
 module.exports.deleteComment = (req, res) => {
-    const id = req.body.commentId;
-    const imageId = parseInt(req.body.id);
-    const userId = parseInt(req.body.userId);
-
-    let user;
-    let photo;
-    for (let i = 0; i < users.length; i++) {
-        if (users[i].id === userId) {
-            user = users[i];
-        }
+    const newComment = {
+        id: req.body.commentId,
+        text: req.body.comment,
+        commentatorId: req.body.commentatorId
+    };
+    let el = findComment(newComment.id, parseInt(req.body.imageId), parseInt(req.body.userId));
+    if (el) {
+        el.parent.RemoveChild();
+        res.send("Success");
     }
-
-    for (let i = 0; i < users[i].album.length; i++) {
-        if (user.album[i].id === imageId) {
-            photo = user.album[i];
-        }
-    }
-
-    for (let i = 0; i < photo.comments.length; i++) {
-        if(photo.comments[i].id === id) {
-            photo.comments.removeChild(photo.comments[i]);
-            res.send("Success");
-        }
-    }
-    res.send("File not found");
+    else
+        res.send("Data not found");
 };
