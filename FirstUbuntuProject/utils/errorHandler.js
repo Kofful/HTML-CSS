@@ -9,16 +9,5 @@ const errors = {
 module.exports.errorHandler = (err, req, res, next) => {
     let result;
     result = errors[err];
-    /*switch (err) {
-        case 1:
-            result = invalidParams();
-            break;
-        case 2:
-            result = notFound();
-            break;
-        default:
-            result = {code: 500, message: err.message}
-    }*/
     res.status(result.code).json(result.message);
-    //res.status(err.code).send(err.message);
 };
