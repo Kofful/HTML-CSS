@@ -188,7 +188,7 @@ module.exports.deleteComment = (req, res) => {
     const userId = parseInt(req.body.userId);
 
     let user;
-    let album;
+    let photo;
     for (let i = 0; i < users.length; i++) {
         if (users[i].id === userId) {
             user = users[i];
@@ -197,13 +197,13 @@ module.exports.deleteComment = (req, res) => {
 
     for (let i = 0; i < users[i].album.length; i++) {
         if (user.album[i].id === imageId) {
-            album = user.album[i];
+            photo = user.album[i];
         }
     }
 
-    for (let i = 0; i < album.length; i++) {
-        if(album[i].id === id) {
-            album.removeChild(album[i]);
+    for (let i = 0; i < photo.comments.length; i++) {
+        if(photo.comments[i].id === id) {
+            photo.comments.removeChild(photo.comments[i]);
             res.send("Success");
         }
     }
