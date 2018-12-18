@@ -6,7 +6,7 @@ const errors = {
     [DATA_NOT_FOUND]: {code: 404, message: "Data node found"}
 };
 
-module.exports.errorHandler = (err, req, res, next) => {
+module.exports.errorHandler = function (err, req, res, next) {
     let result;
     result = errors[err];
     res.status(result.code).json(result.message);

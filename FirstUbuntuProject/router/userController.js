@@ -73,6 +73,7 @@ module.exports.setUserNickname = function (req, res) {
 
 module.exports.uploadFile = function (req, res, next) {
     const timestamp = new Date().getTime();
+    console.log(req.body);
     const storage = multer.diskStorage({
         destination: "./public/avatars/",
         filename: (req, file, cb) => {
@@ -87,6 +88,7 @@ module.exports.uploadFile = function (req, res, next) {
                 fileName: file.originalname
             };
             const userId = parseInt(req.body.userId);
+            console.log(req.body, userId);
             for (let i = 0; i < users.length; i++) {
                 if (users[i].id === userId) {
                     users[i].album.push(img);

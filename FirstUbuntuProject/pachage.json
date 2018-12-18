@@ -5,7 +5,6 @@
     "body-parser": "^1.16.0",
     "express": "^4.14.0",
     "multer": "^1.4.1",
-    "nodemon": "^1.18.8",
     "npm": "^6.4.1"
   },
   "main": "index.js",

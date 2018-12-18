@@ -20,13 +20,19 @@ User.findById(req.params.id)
 
 module.exports.login = (req, res, next) => {
   const {email, password} = req.body;
+  let currentUser;
   User.findOne({email})
       .select("+hashPassword")
   .then((user) => {
     if (!user || user.comparePassword(password)) {
       return next(new Error("Invalid email or password"));
     }
-    res.json(user)
+    currentUser = user;
+      return user.genereateTokenPair();
+  })
+      .then(tokens =>
+  {
+      res.json({currentUser, tokens});
   })
     .catch(error => {
       next(error);
