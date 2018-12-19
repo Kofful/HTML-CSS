@@ -11,17 +11,16 @@ module.exports = {
         }
     },
     validateUser(req, res, next) {
-        console.log(req.body);
         const {
             userNickname,
             password,
             userName,
             userLastName,
         } = req.body;
-        const re = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+        const pasTest = /^[a-zA-Z0-9_!@#$%^&*-]{8,32}$/;
+        const nickTest = /^[a-zA-Z0-9_-]{3,16}$/;
         if (!userName || !userNickname || !userLastName || !password ||
-            password.length < 8 || password.length > 32 ||
-            !re.test(userNickname) || !re.test(password)) {
+            !nickTest.test(userNickname) || !pasTest.test(password)) {
             next(INVALID_PARAMS);
         }
         else {

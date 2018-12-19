@@ -1,5 +1,5 @@
 const User = require("../models/userModel");
-
+const constant = require("../utils/constants")
 
 module.exports.createUser = (req, res, next) => {
   const data = req.body;

@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
-const RefreshToken = require(".refresh.token.model");
+const RefreshToken = require("./refresh.token.model");
 const bcrypt = require("bcrypt");
 
 const Schema = new mongoose.Schema({
