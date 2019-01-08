@@ -4,43 +4,43 @@ const RefreshToken = require("./refresh.token.model");
 const bcrypt = require("bcrypt");
 
 const Schema = new mongoose.Schema({
-userNickname: {
-    type: String,
-    required: true,
-    unique: true
-},
-     userName: {
-         type: String,
-         required: true
-     },
-     userLastName: {
-         type: String,
-         required: true
-     },
-     hashPassword: {
-    type: String,
-         required: true,
-         select: false
-     },
+    userNickname: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    userName: {
+        type: String,
+        required: true
+    },
+    userLastName: {
+        type: String,
+        required: true
+    },
+    hashPassword: {
+        type: String,
+        required: true,
+        select: false
+    },
 
- });
-Schema.virtual("password")
-.set( function(password) {
-    this.hashPassword = bcrypt.hashSync(password, bcrypt.genSaltSync(8));
-})
-.get( function() {
-    return this.hashPassword
 });
+Schema.virtual("password")
+    .set(function (password) {
+        this.hashPassword = bcrypt.hashSync(password, bcrypt.genSaltSync(8));
+    })
+    .get(function () {
+        return this.hashPassword
+    });
 
 Schema.methods.comparePassword = function (password) {
-  return bcrypt.compareSync(password, this.hashPassword);
+    return bcrypt.compareSync(password, this.hashPassword);
 };
 
-Schema.methods.generateAccessToken = function() {
+Schema.methods.generateAccessToken = function () {
     return jwt.sign({uid: this._id, type: "access"}, "myCustomKey", {expiresIn: "2h"});
 };
 
-Schema.methods.generateRefreshToken = function() {
+Schema.methods.generateRefreshToken = function () {
     return jwt.sign({uid: this._id, type: "refresh"}, "myCustomKey", {expiresIn: "30d"});
 };
 
