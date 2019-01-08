@@ -14,17 +14,26 @@ module.exports.getAllConversations = async (req, res, next) => {
                         select: "firstName lastName photoPath"
                     })
                     .then(message => {
+                        conversation.message = message;
                         foundConvs.push(message);
+                        req.send(foundConvs);
                     })
             });
-        req.send(conversations);
     } catch (e) {
 
     }
 };
 
 module.exports.getConversationById = async (req, res, next) => {
-
+    const cid = req.params.id;
+    const conversations = await Conversation.findById(cid)
+        .select("createdAt body author")
+        .sort("createdAt")
+        .populate({
+            path: "author",
+            select: "_id firstName lastName photoPath"
+        });
+    res.send(conversations);
 };
 
 module.exports.createConversation = async (req, res, next) => {
