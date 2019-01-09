@@ -1,13 +1,9 @@
-const express = require("express");
-const router = require("./router");
-//const errorHandler = require("./utils/errorHandler");
+const http = require("http");
+const app = require("./servers/httpServer/");
+const socketServer = require("./servers/socketServer/");
 
-require("./db/mongoose");
+const httpServer = http.createServer(app);
 
-const app = express();
+socketServer.listen(httpServer);
 
-app.use(express.json());
-app.use(router);
-//app.use(errorHandler);
-
-app.listen(3001);
+httpServer.listen(3000, () => console.log("~Server is working"));
