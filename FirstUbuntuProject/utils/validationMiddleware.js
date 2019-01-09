@@ -10,17 +10,32 @@ module.exports = {
             next();
         }
     },
+    validateUserPassword(req, res, next) {
+        const { password } = req.body;
+        const pasTest = /^[a-zA-Z0-9_!@#$%^&*-]{8,32}$/;
+        if(!password || !pasTest.test(password)) {
+            next(INVALID_PARAMS);
+        }
+        else {
+            next();
+        }
+    },
+    validateUserNickname(req, res, next) {
+        const { userNickname } = req.body;
+        const nickTest = /^[a-zA-Z0-9_-]{3,16}$/;
+        if(!userNickname || !nickTest.test(userNickname)) {
+            next(INVALID_PARAMS);
+        }
+        else {
+            next();
+        }
+    },
     validateUser(req, res, next) {
         const {
-            userNickname,
-            password,
             userName,
             userLastName,
         } = req.body;
-        const pasTest = /^[a-zA-Z0-9_!@#$%^&*-]{8,32}$/;
-        const nickTest = /^[a-zA-Z0-9_-]{3,16}$/;
-        if (!userName || !userNickname || !userLastName || !password ||
-            !nickTest.test(userNickname) || !pasTest.test(password)) {
+        if (!userName || !userLastName) {
             next(INVALID_PARAMS);
         }
         else {

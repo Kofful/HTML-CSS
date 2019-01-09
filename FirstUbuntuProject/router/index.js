@@ -16,6 +16,8 @@ const {
 const {
     validateParams,
     validateUser,
+    validateUserNickname,
+    validateUserPassword,
     validateFileName
 } = require("../utils/validationMiddleware");
 
@@ -23,11 +25,11 @@ const router = express.Router();
 
 router.get("/user/:id", validateParams, getUserById);
 router.delete("/user/:id", validateParams, removeUser);
-router.post("/user", validateUser, addUser);
+router.post("/user", validateUserNickname, validateUserPassword, validateUser, addUser);
 router.get("/", getAllUsers);
-router.post("/user/:id", validateParams, validateUser, setUserNickname);
+router.post("/user/:id", validateParams, validateUserNickname, setUserNickname);
 
-router.post("/upload/:description", uploadFile);
+router.post("/upload", uploadFile);
 router.get("/download/:fileName", validateFileName, downloadFile);
 router.post("/delete-file", deleteFile);
 

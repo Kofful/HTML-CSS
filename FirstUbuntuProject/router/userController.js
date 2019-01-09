@@ -1,5 +1,7 @@
 const multer = require("multer");
 const path = require("path");
+const {DATA_NOT_FOUND, INVALID_PARAMS} = require("../utils/constants");
+
 const users = [
     {
         id: 1,
@@ -7,7 +9,20 @@ const users = [
         userLastName: "Shevchenko",
         userNickname: "Monstr21312",
         password: "12345678",
-        album: []
+        album: [
+            {
+                "comments": [
+                    {
+                        "id": 1,
+                        "text": "What does it mean?",
+                        "commentatorId": "2"
+                    }
+                    ],
+                "id": 1,
+                "description": "",
+                "fileName": "ado-net.jpg"
+            }
+        ]
     },
     {
         id: 2,
@@ -31,7 +46,7 @@ module.exports.getAllUsers = function (req, res) {
     res.json(users);
 };
 
-module.exports.getUserById = function (req, res) {
+module.exports.getUserById = function (req, res, next) {
     const id = parseInt(req.params.id);
     for (let i = 0; i < users.length; i++) {
         if (users[i].id === id) {
@@ -39,10 +54,10 @@ module.exports.getUserById = function (req, res) {
             return;
         }
     }
-    res.send("user not found");
+    return next(DATA_NOT_FOUND);
 };
 
-module.exports.removeUser = function (req, res) {
+module.exports.removeUser = function (req, res ,next) {
     const id = parseInt(req.params.id);
     for (let i = 0; i < users.length; i++) {
         if (users[i].id === id) {
@@ -51,7 +66,7 @@ module.exports.removeUser = function (req, res) {
             return;
         }
     }
-    res.send("user not found");
+    return next(DATA_NOT_FOUND);
 };
 
 module.exports.addUser = function (req, res) {
@@ -59,36 +74,33 @@ module.exports.addUser = function (req, res) {
     res.send(users);
 };
 
-module.exports.setUserNickname = function (req, res) {
-    const id = parseInt(req.body.id);
+module.exports.setUserNickname = function (req, res, next) {
+    const id = parseInt(req.params.id);
     for (let i = 0; i < users.length; i++) {
         if (users[i].id === id) {
-            users[i].nickname = req.body.nickname;
+            users[i].userNickname = req.body.userNickname;
             res.json(users);
             return;
         }
     }
-    res.send("user not found");
+    return next(DATA_NOT_FOUND);
 };
 
 module.exports.uploadFile = function (req, res, next) {
     const timestamp = new Date().getTime();
-    console.log(req.body);
     const storage = multer.diskStorage({
         destination: "./public/avatars/",
         filename: (req, file, cb) => {
             if (file.mimetype.toString().indexOf("image") === -1) {
-                res.send("INVALID_DATA");
-                return;
+                return next(INVALID_PARAMS);
             }
             const img = {
                 comments: [],
-                id: parseInt(req.body.id),
-                description: (req.params.description),
+                id: 1,
+                description: (req.query.description),
                 fileName: file.originalname
             };
-            const userId = parseInt(req.body.userId);
-            console.log(req.body, userId);
+            const userId = parseInt(req.query.userId);
             for (let i = 0; i < users.length; i++) {
                 if (users[i].id === userId) {
                     users[i].album.push(img);
@@ -121,76 +133,78 @@ function findPhoto(imageId, userId)
             user = el;
         }
     });
+    let result;
     user.album.forEach(el => {
         if (el.id === imageId) {
-            return el;
+            result = el;
         }
     });
+    result.photoIndex = user.album.indexOf(result);
+    result.userIndex = users.indexOf(user);
+    return result;
 }
 
-module.exports.deleteFile = (req, res) => {
-    const photo = findPhoto(parseInt(req.body.imageId), parseInt(req.body.userId));
+module.exports.deleteFile = (req, res, next) => {
+    const { userIndex, photoIndex, ...photo} = findPhoto(parseInt(req.body.imageId), parseInt(req.body.userId));
     if(photo) {
-        photo.parent.removeChild();
+        users[userIndex].album.splice(photoIndex, 1);
         res.send("Success");
     }
-    else
-    res.send("File not found");
+    else {
+        return next(DATA_NOT_FOUND);
+    }
 };
 
-module.exports.addComment = (req, res) => {
+module.exports.addComment = (req, res, next) => {
     const comment = {
-        id: req.body.commentId,
+        id: 1,
         text: req.body.comment,
         commentatorId: req.body.commentatorId
     };
-    const photo = findPhoto(parseInt(req.body.imageId), parseInt(req.body.userId));
+    const { userIndex, photoIndex, ...photo} = findPhoto(parseInt(req.body.imageId), parseInt(req.body.userId));
     if(photo) {
-        photo.parent.removeChild();
-        res.send("Success");
+        users[userIndex].album[photoIndex].comments.push(comment);
+        res.send("success");
     }
-    if(photo) {
-        photo.comments.push(comment);
+    else {
+        return next(DATA_NOT_FOUND);
     }
-    else
-    res.send("File not found");
 };
 
 function findComment(id, imageId, userId) {
     const photo = findPhoto(imageId, userId);
+    let result;
     photo.comments.forEach(el => {
         if (el.id === id) {
-            return el;
+            result = el;
         }
     });
+    result.commentIndex = photo.comments.indexOf(result);
+    result.userIndex = photo.userIndex;
+    result.photoIndex = photo.photoIndex;
+    return result;
 }
 
-module.exports.updateComment = (req, res) => {
-    const newComment = {
-        id: req.body.commentId,
-        text: req.body.comment,
-        commentatorId: req.body.commentatorId
-    };
-    let el = findComment(newComment.id, parseInt(req.body.imageId), parseInt(req.body.userId));
+module.exports.updateComment = (req, res, next) => {
+    const { commentId, comment } = req.body;
+    const { commentIndex, userIndex, photoIndex, ...el } = findComment(parseInt(commentId), parseInt(req.body.imageId), parseInt(req.body.userId));
     if (el) {
-        el = newComment;
+        users[userIndex].album[photoIndex].comments[commentIndex] = comment;
         res.send("Success");
     }
-    else
-        res.send("Data not found");
+    else {
+        return next(DATA_NOT_FOUND);
+    }
 };
 
-module.exports.deleteComment = (req, res) => {
-    const newComment = {
-        id: req.body.commentId,
-        text: req.body.comment,
-        commentatorId: req.body.commentatorId
-    };
-    let el = findComment(newComment.id, parseInt(req.body.imageId), parseInt(req.body.userId));
+module.exports.deleteComment = (req, res, next) => {
+    const { commentId } = req.body;
+    const { commentIndex, userIndex, photoIndex, ...el } = findComment(parseInt(commentId), parseInt(req.body.imageId), parseInt(req.body.userId));
     if (el) {
-        el.parent.RemoveChild();
+        users[userIndex].album[photoIndex].comments.splice(commentIndex, 1);
         res.send("Success");
     }
-    else
-        res.send("Data not found");
+    else {
+        return next(DATA_NOT_FOUND);
+    }
 };
