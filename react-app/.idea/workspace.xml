@@ -2,60 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6710cec5-8540-4920-9cbd-1227e1535435" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../2018_12_17/utils/validationMiddleware.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/ado-net.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/airplane.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/c-sharp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/cellphone-basic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/chevron.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/css.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/email.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/environment-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/environment-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/facebook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/file.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/header-back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/html.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/js.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/mssql.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/net-framework.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/p1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/p2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/p3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/p4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/p5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/php.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/profile-photo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/twitter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/uml.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/visual-studio.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/vk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2018_12_17/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2018_12_17/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/History.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/lib/application.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/lib/express.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/lib/middleware/init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/lib/middleware/query.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/lib/request.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/lib/response.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/lib/router/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/lib/router/layer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/lib/router/route.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/lib/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/lib/view.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2018_12_17/servers/httpServer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2018_12_17/servers/httpServer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2018_12_17/servers/httpServer/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2018_12_17/servers/httpServer/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2018_12_17/servers/httpServer/router/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2018_12_17/servers/httpServer/router/userController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2018_12_17/utils/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2018_12_17/utils/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2018_12_17/utils/errorHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2018_12_17/utils/errorHandler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FirstUbuntuProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FirstUbuntuProject/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/react-app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-registration/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,8 +20,10 @@
     <session id="-1299217497">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -90,24 +45,29 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="19" />
-          <entry key="js" value="208" />
+          <entry key="js" value="210" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="19" />
-          <entry key="JavaScript" value="208" />
+          <entry key="JavaScript" value="210" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="ESLintLanguageService" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1261">
-              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+            <state relative-caret-position="221">
+              <caret line="40" column="90" lean-forward="true" selection-start-line="40" selection-start-column="90" selection-end-line="40" selection-end-column="90" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -115,16 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/assets/script.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="17" column="5" lean-forward="true" selection-end-line="108" />
+              <caret line="17" column="5" selection-end-line="108" />
             </state>
           </provider>
         </entry>
@@ -143,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1326">
-              <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -178,6 +133,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="20" />
     <option name="width" value="792" />
@@ -191,35 +154,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
             <path>
               <item name="react-app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="react-app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="react-app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="node_modules" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="react-app" type="2674bda8:ScopeViewTreeModel$GroupNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547374348983" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547377709582" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="D:\IdeaProjects\HTML-CSS\react-app\node_modules\eslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -254,27 +210,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1547369657005</updated>
-      <workItem from="1547369659768" duration="4666000" />
+      <workItem from="1547369659768" duration="7107000" />
+      <workItem from="1547378708451" duration="378000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4666000" />
+    <option name="totallyTimeSpent" value="7485000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32903227" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -282,15 +236,19 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32903227" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,17 +264,17 @@
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+        <state relative-caret-position="391">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="5" lean-forward="true" selection-end-line="108" />
+          <caret line="17" column="5" selection-end-line="108" />
         </state>
       </provider>
     </entry>
@@ -329,18 +287,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1261">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        <state relative-caret-position="221">
+          <caret line="40" column="90" lean-forward="true" selection-start-line="40" selection-start-column="90" selection-end-line="40" selection-end-column="90" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

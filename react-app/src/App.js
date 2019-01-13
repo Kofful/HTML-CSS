@@ -36,7 +36,7 @@ class App extends Component {
         </div>
         <div className="references">
             <a target="_blank" className="reference" href="https://www.facebook.com/kofful">
-            <img alt="facebook" className="reference-img" src={facebook}/>
+            <img src={facebook} alt="facebook" className="reference-img" />
             </a>
             <a target="_blank" className="reference" href="https://twitter.com/Vlad26_05">
             <img alt="twitter" className="reference" src={require("./assets/img/twitter.png")}/>
