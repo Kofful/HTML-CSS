@@ -11,24 +11,25 @@ module.exports.createUser = (req, res, next) => {
         .catch(err => next(err));
 };
 
-module.exports.findById = (req, res, next) => {
-    User.findById(req.params.id)
-        .select("+hashPassword -__v -lastName")
+module.exports.findByNickname = (req, res, next) => {
+    const {userNickname} = req.params;
+    User.findOne({userNickname})
+        .select("-hashPassword -_id -__v")
         .then((savedUser) => res.json(savedUser))
         .catch(err => next(err))
 };
 
 module.exports.login = (req, res, next) => {
-    const {email, password} = req.body;
+    const {userNickname, password} = req.body;
     let currentUser;
-    User.findOne({email})
+    User.findOne({userNickname})
         .select("+hashPassword")
         .then((user) => {
-            if (!user || user.comparePassword(password)) {
-                return next(new Error("Invalid email or password"));
+            if (!user || !user.comparePassword(password)) {
+                return next(new Error("Invalid login or password"));
             }
             currentUser = user;
-            return user.genereateTokenPair();
+            return user.generateTokenPair();
         })
         .then(tokens => {
             res.json({currentUser, tokens});
@@ -44,7 +45,7 @@ module.exports.updateUser = (req, res, next) => {
         .select("+hashPassword")
         .then((user) => {
             if (!user) {
-                return next(new Error("User not found"));
+                return next("User not found");
             }
             res.json(user)
         })
@@ -53,7 +54,7 @@ module.exports.updateUser = (req, res, next) => {
         })
 };
 
-module.exports.getUserWithPredicat = (req, res, next) => {
+module.exports.getUserWithPredicate = (req, res, next) => {
     const {page, ...other} = req.query;
     //const page = parseInt(req.query.page);
     let currentPage = parseInt(page);
@@ -66,7 +67,7 @@ module.exports.getUserWithPredicat = (req, res, next) => {
 
             User.find(...other).countDocuments(),
             User.find(...other)
-                .sort({email: "ask"})
+                .sort({userNickname: "ask"})
                 .skip(SKIP)
                 .limit(LIMIT)
         ]

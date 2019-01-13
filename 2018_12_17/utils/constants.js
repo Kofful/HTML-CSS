@@ -8,3 +8,8 @@ module.exports.TYPE = {
   PREMIUM_USER: 2,
   USER: 1
 };
+
+module.exports = {
+    DATA_NOT_FOUND: "DATA NOT FOUND",
+    INVALID_PARAMS: "INVALID PARAMS",
+};

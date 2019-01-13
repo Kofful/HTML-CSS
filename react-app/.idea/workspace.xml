@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6710cec5-8540-4920-9cbd-1227e1535435" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../2018_12_17/utils/validationMiddleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/ado-net.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/airplane.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/c-sharp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/cellphone-basic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/chevron.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/css.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/email.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/environment-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/environment-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/file.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/header-back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/html.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/js.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/mssql.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/net-framework.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/p1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/p2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/p3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/p4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/p5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/php.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/profile-photo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/twitter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/uml.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/visual-studio.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/vk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018_12_17/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2018_12_17/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/History.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/lib/application.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/lib/express.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/lib/middleware/init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/lib/middleware/query.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/lib/request.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/lib/response.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/lib/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/lib/router/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/lib/router/route.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/lib/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/lib/view.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018_12_17/node_modules/express/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018_12_17/servers/httpServer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2018_12_17/servers/httpServer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018_12_17/servers/httpServer/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2018_12_17/servers/httpServer/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018_12_17/servers/httpServer/router/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2018_12_17/servers/httpServer/router/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018_12_17/utils/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2018_12_17/utils/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2018_12_17/utils/errorHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2018_12_17/utils/errorHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FirstUbuntuProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FirstUbuntuProject/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1299217497">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="gitignore" value="2" />
+          <entry key="js" value="3" />
+          <entry key="json" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="JSON" value="2" />
+          <entry key="JavaScript" value="3" />
+          <entry key="PLAIN_TEXT" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="19" />
+          <entry key="js" value="208" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="19" />
+          <entry key="JavaScript" value="208" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1261">
+              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/assets/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="5" lean-forward="true" selection-end-line="108" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1326">
+              <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>img</find>
+      <find>class</find>
+      <find>ke</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>className</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="20" />
+    <option name="width" value="792" />
+    <option name="height" value="926" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="react-app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="react-app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="react-app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="node_modules" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547374348983" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\HTML-CSS\react-app" />
+      <recent name="D:\IdeaProjects\HTML-CSS\react-app\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6710cec5-8540-4920-9cbd-1227e1535435" name="Default Changelist" comment="" />
+      <created>1547369657005</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547369657005</updated>
+      <workItem from="1547369659768" duration="4666000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4666000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32903227" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="5" lean-forward="true" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1261">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
